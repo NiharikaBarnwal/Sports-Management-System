@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-IN"> <!--html is root element-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--scale : to tell that it is not zoomed-->
+    <title>Document</title>
+    <!--internal js-->
+    <script>
+
+    </script>
+    
+    <!--internal css-->
+    <style> 
+        p {
+            color:rgba(255, 0, 0, 0.313)
+        }
+    </style>
+    <!--external css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Including jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!--external js-->
+    <script src="js/myscript.js"></script>
+</head>
+<body>
+    <input id="mynumber" type="number">   <!--onchange="fn_trycatch()"  for simple js-->
+    <button id="mybutton" onclick='fn1()' name="mybutton">Click me</button>
+    <div id="mydivid">This is my first div</div>
+
+    <div id="div1" style="background-color: aqua; height: 80px; width: 80px; display: none;"></div>
+    <div id="div2" style="background-color: beige; height: 80px; width: 80px; display: none;"></div>
+    <div id="div3" style="background-color: blueviolet; height: 80px; width: 80px; display: none;"></div>
+
+    <h1>This is heading 1</h1>
+    <h6>This is heading 6</h6>
+    <p style="color: chartreuse;">This is my paragraph <mark>marked</mark>
+    <em> emphazised</em> CH<sub>4</sub> SO<sup>2-</sup> <i>italic</i> <del>deleted text</del>   </p>
+    <p>&#128512;</p>
+    <p style="font-size:48px">
+        &#128512; &#128516; &#128525; &#128151;
+        </p>
+    <a href="https://www.google.com/">google</a>
+
+    <ul>
+        <li>red</li>
+        <li>blue</li>
+        <li>green</li>
+    </ul>
+   <!--div provides a border and limits the area (block element)-->
+    <div style="border:12px rgb(0, 255, 221) solid; padding: 4px; margin: 10px;" id="bigbox"> <!--padding: distance from the content ; margin:distance from the outer screen-->
+        <form action="to_address.php" method="post">
+            <label>Employee ID</label>
+                <input type="number" name="player_id">
+                <br><br>
+            <label>GENDER:</label>
+            <br>
+            <label for="radio_male_gender"><input type="radio" name="gender" value="Male">male</label>
+            <label for="radio_female_gender"><input type="radio" name="gender" value="Female">female</label>
+            <label for="radio_other_gender"><input type="radio" name="gender" value="Other">other</label>
+            <br><br>
+            <label for="checkbox_male_gender"><input type="checkbox" name="stream[]" value="1">IT</label>
+            <label for="checkbox_female_gender"><input type="checkbox" name="stream[]" value="2">CS</label>
+            <label for="checkbox_other_gender"><input type="checkbox" name="stream[]" value="3">CIVIL</label>
+            <br><br>
+            <input type="button" value="click here">
+        </form>
+    </div>
+</body>
+</html>
