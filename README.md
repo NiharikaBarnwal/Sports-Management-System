@@ -47,7 +47,7 @@ The system includes features for user authentication, athlete and coach registra
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/nebula-sports.git
+   git clone https://github.com/NiharikaBarnwal/nebula-sports.git
    ```
 2. Set up the database using the provided SQL script in the `database/` folder.
 3. Configure the database connection in `connection.php`.
